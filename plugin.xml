@@ -33,7 +33,6 @@
         
         <framework src="IDnowSDK" type="podspec" spec="3.20.0" />
        
-        <framework src="Sentry" type="podspec" spec="4.0.1" deployment_target="11.0" />
 
 
         <source-file src="src/ios/IDnowPlugin.m" />
