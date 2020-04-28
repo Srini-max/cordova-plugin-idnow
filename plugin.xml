@@ -30,12 +30,10 @@
         <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
             <string>This app needs photo library access</string>
         </config-file>
+        
         <framework src="IDnowSDK" type="podspec" spec="3.20.0" />
-        <framework src="Alamofire" type="podspec" spec="~> 4.7" />
-        <framework src="Starscream" type="podspec" spec="3.1.0" />
-        <framework src="OpenCV2" type="podspec" spec="3.4.1" />
+       
         <framework src="Sentry" type="podspec" spec="4.0.1" deployment_target="11.0" />
-         <framework src="lottie-ios" type="podspec" spec="~> 3.1.1" />
 
 
         <source-file src="src/ios/IDnowPlugin.m" />
