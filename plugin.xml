@@ -34,7 +34,7 @@
         <framework src="Alamofire" type="podspec" spec="~> 4.7" />
         <framework src="Starscream" type="podspec" spec="3.1.0" />
         <framework src="OpenCV2" type="podspec" spec="3.4.1" />
-        <framework src="Sentry" type="podspec" spec="4.0.1" />
+        <framework src="Sentry" type="podspec" spec="4.0.1" spec.ios.deployment_target  = '11.0' />
 
         
         <source-file src="src/ios/IDnowPlugin.m" />
