@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-idnow" version="0.0.8" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:tools="http://schemas.android.com/tools">
+    <name>IDnowPlugin</name>
+    <asset src="www/IDnowPlugin.js" target="js/IDnowPlugin.js"/>
+    <js-module name="IDnowPlugin" src="www/IDnowPlugin.js">
+        <clobbers target="IDnowPlugin" />
+    </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="IDnowPlugin">
+                <param name="ios-package" value="IDnowPlugin" />
+            </feature>
+        </config-file>
+
+        <preference name="CAMERA_USAGE_DESCRIPTION" default="This app needs camera access"/>
+            <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+                <string>$CAMERA_USAGE_DESCRIPTION</string>
+            </config-file>
+
+        <preference name="MICROPHONE_USAGE_DESCRIPTION" default="This app needs microphone access"/>
+            <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
+                <string>$MICROPHONE_USAGE_DESCRIPTION</string>
+            </config-file>
+            
+        <framework src="IDnowSDK" type="podspec" spec="~> 3.9.0" />
+        <source-file src="src/ios/IDnowPlugin.m" />
+    </platform>
+</plugin>

@@ -1,0 +1,28 @@
+{
+    "name": "idnowplugin",
+    "version": "0.0.9",
+    "cordova_name": "IDnowPlugin",
+    "description": "IDnow cordova plugin",
+    "cordova": {
+        "id": "cordova-plugin-idnow",
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "keywords": [
+        "IDnow ID Verification",
+        "IDnow plugin",
+        "cordova-plugin-idnow"
+    ],
+    "author": "",
+    "contributors": "",
+    "licenses": [{
+        "type": "MIT",
+        "url": ""
+    }]
+}
