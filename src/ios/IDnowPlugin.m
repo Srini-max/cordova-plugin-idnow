@@ -19,8 +19,6 @@ NSTimer *keepAliveTimer;
     // Member variables go here.
 }
 
-@property (strong, nonatomic) IDnowController *idnowController;
-
 //- (void)initIDNow:(CDVInvokedUrlCommand*)command;
 
 - (void)startPhotoIdent:(CDVInvokedUrlCommand*)command;
@@ -33,7 +31,6 @@ NSTimer *keepAliveTimer;
 
 - (void)startPhotoIdent:(CDVInvokedUrlCommand*)command {
     
-    globalCommand = command;
     [IDNowSDK.shared startWithToken:@"TND-PLMSE" preferredLanguage:@"en" fromViewController:self listener:idnowResultListener];
 
 }
@@ -44,14 +41,12 @@ void (^idnowResultListener)(enum IdentResult identResult, NSString * _Nonnull) =
           // show result in debug log
           CDVPluginResult* pluginResult = nil;
           pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"Some error occured"];
-          [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
       }
 
       if( result == IdentResultFINISHED ) {
           // show result in debug log
           CDVPluginResult* pluginResult = nil;
           pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"Identification Finished"];
-          [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
       }
   };
 
