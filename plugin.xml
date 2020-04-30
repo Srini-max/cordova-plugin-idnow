@@ -31,7 +31,7 @@
             <string>This app needs photo library access</string>
         </config-file>
         
-	 <framework src="Alamofire" type="podspec" spec="4.7.1"  inhibit-all-warnings="true" />
+	 <framework src="Alamofire" type="podspec" spec="5.0.2"  inhibit-all-warnings="true" />
         <framework src="Starscream" type="podspec" spec="3.0.6" />
         <framework src="OpenCV2" type="podspec" spec="3.4.1" />
 	<framework src="lottie-ios" type="podspec" spec="3.0.1" />
