@@ -1,6 +1,6 @@
 {
     "name": "idnowplugin",
-    "version": "1.0",
+    "version": "0.0.1",
     "cordova_name": "IDnowPlugin",
     "description": "IDnow cordova plugin",
     "cordova": {
