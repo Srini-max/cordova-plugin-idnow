@@ -31,12 +31,18 @@
             <string>This app needs photo library access</string>
         </config-file>
         
-        <framework src="Alamofire" type="podspec" spec="4.7.3" swift-version="4.2" />
-        <framework src="Starscream" type="podspec" spec="3.0.6" />
-        <framework src="OpenCV2" type="podspec" spec="3.4.1" />
-	<framework src="lottie-ios" type="podspec" spec="3.0.1" />
-        <framework src="Sentry" type="podspec" spec="4.1.0"  />
-
+     <podspec>
+      <config>
+        <source url="https://github.com/CocoaPods/Specs.git"/>
+      </config>
+      <pods use-frameworks="true">
+        <pod name="Alamofire" spec="4.7.3" swift-version="4.2" />
+        <pod name="Starscream" spec="3.0.6" />
+        <pod name="OpenCV2" spec="3.4.1"/>
+        <pod name="lottie-ios" spec="3.0.1" />
+		<pod name="Sentry" spec="4.1.0" />
+      </pods>
+    </podspec>
 		<framework src="src/ios/sdk/IDNowSDKCore.framework" custom="true" />
 
         <source-file src="src/ios/IDnowPlugin.m" />
