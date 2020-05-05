@@ -30,14 +30,19 @@
         <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
             <string>This app needs photo library access</string>
         </config-file>
-        
-        <framework src="OpenCV2" type="podspec" spec="3.4.1" />
+	
+		<podspec>
+            <pods use-frameworks="true">
+                <pod name="OpenCV2" spec="~> 3.4.1"/>
+                <pod name="Sentry" git="https://github.com/getsentry/sentry-cocoa.git" spec="~> 3.9.1"/>
+            </pods>
+        </podspec>
 		
-	<framework src="src/ios/sdk/IDNowSDKCore.framework" custom="true" embed="true" />
-	<framework src="src/ios/sdk/Alamofire.framework" custom="true" embed="true"/>
-	<framework src="src/ios/sdk/Lottie.framework" custom="true" embed="true"/>
-	<framework src="src/ios/sdk/Starscream.framework" custom="true" embed="true"/>
-	<framework src="src/ios/sdk/Sentry.framework" custom="true" embed="true"/>
+		<framework src="src/ios/sdk/IDNowSDKCore.framework" custom="true" embed="true" />
+		<framework src="src/ios/sdk/Alamofire.framework" custom="true" embed="true"/>
+		<framework src="src/ios/sdk/Lottie.framework" custom="true" embed="true"/>
+		<framework src="src/ios/sdk/Starscream.framework" custom="true" embed="true"/>
+		<framework src="src/ios/sdk/Sentry.framework" custom="true" embed="true"/>
 
         <source-file src="src/ios/IDnowPlugin.m" />
             
