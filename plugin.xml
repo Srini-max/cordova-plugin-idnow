@@ -33,12 +33,13 @@
 	
 		 
 		<framework src="OpenCV2" type="podspec" spec="3.4.1" use-frameworks="true"/>
-		 <framework src="Sentry" type="podspec" spec="3.4.1" use-frameworks="true"/>
 		
 		<framework src="src/ios/sdk/IDNowSDKCore.framework" custom="true" embed="true" />
 		<framework src="src/ios/sdk/Alamofire.framework" custom="true" embed="true"/>
 		<framework src="src/ios/sdk/Lottie.framework" custom="true" embed="true"/>
 		<framework src="src/ios/sdk/Starscream.framework" custom="true" embed="true"/>
+       	      	<framework src="src/ios/sdk/Sentry.framework" custom="true" embed="true"/>
+	    	<framework src="src/ios/sdk/Sentry.framework" target-dir="lib" framework="true" />
 
         <source-file src="src/ios/IDnowPlugin.m" />
             
