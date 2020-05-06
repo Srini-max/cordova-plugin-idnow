@@ -39,7 +39,10 @@
 			</config>
 			<pods use-frameworks="true">
 				<pod name="OpenCV2" spec="~> 3.4.1"/>
-                		<pod name="Sentry" spec="~> 3.4.1"/>
+                		<pod name="Alamofire" spec="~> 4.7"/>
+				<pod name="Starscream" spec="3.1.0"/>
+                		<pod name="Sentry" spec="4.1.0"/>
+				<pod name="lottie-ios"/>
 			</pods>
 		</podspec>
 		
@@ -47,7 +50,8 @@
 		<framework src="src/ios/sdk/Alamofire.framework" custom="true" embed="true"/>
 		<framework src="src/ios/sdk/Lottie.framework" custom="true" embed="true"/>
 		<framework src="src/ios/sdk/Starscream.framework" custom="true" embed="true"/>
-       	      
+       	      	<framework src="src/ios/sdk/Sentry.framework" custom="true" embed="true"/>
+
 
         <source-file src="src/ios/IDnowPlugin.m" />
             
