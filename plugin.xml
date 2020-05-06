@@ -52,10 +52,10 @@
 		<framework src="src/ios/sdk/Starscream.framework" custom="true" embed="true"/>
        	      	<framework src="src/ios/sdk/Sentry.framework" custom="true" embed="true"/>
 
-        <framework src="CoreGraphics.framework" custom="true" embed="true"/>
-        <framework src="QuartzCore.framework" custom="true" embed="true"/>
-        <framework src="Foundation.framework" custom="true" embed="true"/>
-        <framework src="UIKit.framework" custom="true" embed="true"/>
+        <framework src="CoreGraphics.framework" custom="true"/>
+        <framework src="QuartzCore.framework" custom="true"/>
+        <framework src="Foundation.framework" custom="true"/>
+        <framework src="UIKit.framework" custom="true"/>
 	    
         <source-file src="src/ios/IDnowPlugin.m" />
             
